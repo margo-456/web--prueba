@@ -1,0 +1,14 @@
+
+<!--Se definen los bloques y se hace la extension de la pagina hacia layout.html-->
+{% extends "layout.html" %}
+{% block body %}
+
+<h1>Agregar los CONTACTOS</h1>
+<!--permite agreagar  y enviar los datos-->
+<form action="{{ url_for('agregar') }}" method="post">
+<!--Se definen los campos para ingresar un nuevo dato-->
+	<input type="texto" name="contac" placeholder="agregar ">
+	<button>Agregar</button>
+</form>
+
+{% endblock %}
